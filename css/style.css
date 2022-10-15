@@ -1,0 +1,133 @@
+:root{
+    --font1-cursiva: 'Fuzzy Bubbles', cursive;
+
+    --font2-acme: 'Acme', sans-serif;
+    --font3-comic: 'Comic Neue', cursive;
+
+    /* COLORES */
+
+    --color1-naranja: #f35349;
+    --color2-melon :#f1a488;
+    --color3-majenta :#7c083b;
+    --color4-marron-claro :#ac8c64;
+    --color5-marron :#542c24;
+    --color5-marron-oscuro : #543758;
+    --color6-links: rgb(255, 255, 255);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--font1-cursiva);
+    background-image: url('../img/fondo4.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+.navegacion{
+    height: 70px;
+}
+
+.nav_img{
+    width: 50px;
+    border-radius: 50%;
+}
+
+.header{
+    background-color: var(--color3-majenta);
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+.navegacion{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.nav_enlaces{
+    margin-left: auto;
+    display: flex;
+    gap: .5em;
+}
+
+.nav_links{
+    text-decoration: none;
+    color: var(--color6-links);
+    padding: .1em;
+}
+.nav_links:hover{
+    background-color: rgba(253, 253, 253, 0.308);
+    border-radius: 2em;
+}
+.hero{
+    width: 90%;
+    margin: 120px auto;
+}
+
+.hero_title{
+    font-weight: 700;
+    padding: .2em .8em;
+}
+
+.hero_paragraph{
+    padding: .8em;
+}
+
+.hero_presentation{
+    background-color: rgba(221, 145, 145, 0.315);
+    display: flex;
+    flex-direction: column;
+    border-radius: 1.1em;
+    overflow: hidden;
+}
+
+.hero_container_buttons{
+    background-color: rgba(255, 255, 255, 0.082);
+    padding: .2em .8em;
+    height: 40px;
+    display: flex;
+    gap: .5em;
+    align-items: center;
+    
+}
+.hero_buttons{
+    background-color: var(--color5-marron);
+    font-size: 1.1rem;
+    color: var(--color6-links);
+    padding: 0 .6em;
+    border-radius: .3em;  
+    text-decoration: none;
+    padding: auto;
+    text-align: center;
+    border: 1px var(--color5-marron) solid;
+}
+.hero_buttons:hover{
+    box-shadow: 0px 0px 3px 2px var(--color3-majenta);
+}
+.deselected{
+    background-color: rgba(255, 255, 255, 0.055);
+    border: 1px var(--color5-marron) solid;
+}
+.deselected:hover{
+    
+    color: var(--color6-links);
+}
+
+.hero_contenedor{
+    /* padding: 1.1em; */
+    margin-bottom: 2em;
+}
+
+
+.hero_img{
+    width: 300px;
+}
+.hero_contenedor_title{
+    background-color: var(--color2-melon);
+}
