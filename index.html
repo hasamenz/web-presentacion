@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,50 +9,175 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap" rel="stylesheet">
 
+    <!-- AGREGANDO LAS FUENTES -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Comic+Neue:ital,wght@0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Acme&family=Comic+Neue:ital,wght@0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- BOOSTRAP PARA LOS ICONOS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <!-- PARA EL SLIDER -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <title>Web - Hugo Segura</title>
 </head>
+
 <body>
-    <main class="main">
-        <header class="header">
-            <nav class="navegacion">
-                <img class="nav_img" src="img/imagen-hs.jpg" alt="Logo de la Web">
-                <div class="nav_enlaces">
-                    <a class="nav_links" href="#">Inicio</a>
-                    <a class="nav_links" href="#">Proyectos</a>
-                    <a class="nav_links" href="#">Contacto</a>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <header class="header">
+        <nav class="navegacion">
+            <img class="nav_img" src="assets/img/imagen-hs.jpg" alt="Logo de la Web">
+            <button id="navIconMenu" class="nav_icon nas_icon--menu">
+                <i class="bi bi-list"></i>
+            </button>
+
+            <div class="nav_enlaces">
+                <a class="nav_links" href="index.html">Inicio</a>
+                <a class="nav_links" href="#slider">Proyectos</a>
+                <a class="nav_links" href="#galeria">Galeria</a>
+                <a class="nav_icon nav_icon--close" href="#" id="navIconClose"><i class="bi bi-x-circle"></i></a>
+
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <section class="hero_presentation">
+            <div class="hero_contenedor">
+                <div class="hero_contenedor_title">
+                    <h2 class="hero_title">Hugo Segura</h2>
                 </div>
-            </nav>
-        </header>
-        <section class="hero">
+                <p class="hero_paragraph">El mejor Desarrollador Fronted en tecnologias HTML, CSS, JAVASCRIPT Y REACT😁.
+                </p>
 
-            <section class="hero_presentation">
-                <div class="hero_contenedor">
-                    <div class="hero_contenedor_title">
-                        <h2 class="hero_title">Hugo Segura</h2>
-                    </div>
-                    <p class="hero_paragraph">El mejor Desarrollador Fronted en tecnologias HTML, CSS, JAVASCRIPT Y REACT😁.</p>
+            </div>
+            <div class="hero_container_buttons">
 
-                </div>
-                <div class="hero_container_buttons">
-                    
-                        <a class="hero_buttons" href="#">CV</a>
-                        <a class="hero_buttons deselected" href="#">GitHub</a>
-
-                </div>
-            </section>
-            
-            <figure class="hero_conteiner_img">
-                <img class="hero_img" src="img/imagen.principal.jpeg" alt="Imagen Principal">
-            </figure>
-
+                <a class="hero_buttons" target="_blank" href="https://drive.google.com/file/d/1_xcL1rOFpaUHprufKU8_q7D9SS9RzMfD/view?usp=sharing">CV</a>
+                <a class="hero_buttons deselected" href="https://github.com/hasamenz" target="_blank">GitHub</a>
+            </div>
         </section>
 
-    </main>
+        <div class="hero_conteiner_img">
+            <img class="hero_img" src="assets/img/imagen.principal.jpeg" alt="Imagen Principal">
+            <figure class="hero_img_decoratiors" >
+                <img class="hero_img_decoratior" src="assets/svg/logo-html-5.svg" alt="logo HTML" width="64"
+                    height="64">
+                <img class="hero_img_decoratior" src="assets/svg/logo-css-3.svg" alt="logo CSS" width="64" height="64">
+                <img class="hero_img_decoratior" src="assets/svg/logo-javascript.svg" alt="logo JAVASCRIPT" width="64"
+                    height="64">
+                <img class="hero_img_decoratior" src="assets/svg/logo-react.svg" alt="logo RECT" width="64" height="64">
+                <img class="hero_img_decoratior" src="assets/svg/firebase.svg" alt="logo RECT" width="64" height="64">
+                <img class="hero_img_decoratior" src="assets/svg/mongodb.svg" alt="logo RECT" width="64" height="64">
+                <img class="hero_img_decoratior" src="assets/svg/nodejs.svg" alt="logo RECT" width="64" height="64">
+                <img class="hero_img_decoratior" src="assets/svg/github.svg" alt="logo RECT" width="64" height="64">
+            </figure>
+        </div>
+    </section>
 
+    <section class="contenedor_main">
+        <section class="main">
+            <div class="section_title">
+                <h2 class="section_title_h2">SLIDER DE PROYECTOS</h2>
+            </div>
+            <section class="section_slider">
+                <!-- Slider main container -->
+                <div class="swiper" id="slider">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img src="https://i.postimg.cc/85KzKxBH/LISTA-PRECIOS.png" alt="proyecto  lista de precios" width="100%" height="100%"></div>
+                        <div class="swiper-slide"><img src="https://i.postimg.cc/rs7FcWHR/CARDS-PRECIOS.png" alt="cards de precios" width="100%" height="100%"></div>
+                        <div class="swiper-slide"><img src="https://i.postimg.cc/66PQdJQ6/FORMULARIO.png" alt="Web de formulario" width="100%" height="100%"></div>
+                        <div class="swiper-slide"><img src="https://i.postimg.cc/tCV4kS13/LANDING-PAGE.png" alt="landing page" width="100%" height="100%"></div>
+                        
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+    
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+    
+                    <!-- If we need scrollbar -->
+                    
+                </div>
+            </section>
+    
+            <div class="section_title">
+                <h2 class="section_title_h2">GALERIA DE PROYECTOS</h2>
+            </div>
+            <section class="section_slider">
+                <div class="gallery__container">
+    
+                    <figure id="galeria" class="gallery__picture">
+                        <img src="https://i.postimg.cc/fyJhX0YW/HUNDLE-FRONTED-MENTOR.png" class="gallery__img">
+                    </figure>
+        
+                    <figure class="gallery__picture">
+                        <img src="https://i.postimg.cc/QtND8ztT/INFORME-TAREAS.png" class="gallery__img">
+                    </figure>
+        
+                    <figure class="gallery__picture">
+                        <img src="https://i.postimg.cc/HxSgVtcP/ORDER-SUMARY-FRONTED-MENTOR.png" class="gallery__img">
+                    </figure>
+        
+                    <figure class="gallery__picture">
+                        <img src="https://i.postimg.cc/9fYVj2W2/REGISTRO-INCIDENCIA.png" class="gallery__img">
+                    </figure>
+    
+                    <figure class="gallery__picture">
+                        <img src="https://i.postimg.cc/4dzDr79w/AGENCIA-ADUANERA.png" class="gallery__img">
+                    </figure>
+    
+                    <figure class="gallery__picture">
+                        <img src="https://i.postimg.cc/3Ngz7Y0L/CARD-NFT.png" class="gallery__img">
+                    </figure>
+        
+        
+                </div>
+            </section>
+        </section>
+
+    </section>
+
+
+    <footer class="footer">
+        <div class="footer-contenido">
+
+            <div class="container_socialmedia">
+                <a class="footer_social_media" href="https://www.facebook.com/hugo.seguraalva" target="_blank"> 
+                    <img class="social_media_icon" src="assets/img/socia-media/facebook.png" alt="icono de facebook">
+                </a>
+    
+                <a class="footer_social_media" href="https://www.instagram.com/hugoseguralv/" target="_blank"> 
+                    <img class="social_media_icon" src="assets/img/socia-media/instagram.png" alt="icono de instagram">
+                </a>
+    
+                <a class="footer_social_media" href="https://twitter.com/petercastl37218" target="_blank"> 
+                    <img class="social_media_icon" src="assets/img/socia-media/twitter.png" alt="icono de twiter">
+                </a>
+    
+                <a class="footer_social_media" href="https://www.linkedin.com/in/hugo-segura-440b1813a/" target="_blank"> 
+                    <img class="social_media_icon" src="assets/img/socia-media/linkedin.png" alt="icono de linkedin" >
+                </a>
+            </div>
+            <h2 class="footer_title">La Web Hugo Segura</h2>
+            <div class="footer_copy">
+                <p class="footer-pharagraft">🌐 Copyright © 2022 Hugo Segura. Todos los derechos reservados. 🌐</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- JAVASCRIP DEL PROYECTO -->
     <script src="js/script.js"></script>
+    <!-- JAVASCRIPT PARA EL SLIDER -->
+    
 </body>
+
 </html>
